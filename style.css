@@ -14,24 +14,34 @@ ul{
 ul li a{
     text-decoration: none;
 }
+div img{
+    display: block;
+    width: 100%;
+}
 .flex-container{
     display: flex;
     max-width: 992px;
     margin: auto;
     width: 100%;
-    
+    min-width: 320px;
+     
 }
 header{
-    background-color: rgb(131, 73, 73);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(25, 114, 126);
     height: 100px;
     display: flex;
     align-items:center;
+    color: rgb(49, 36, 36);
 }
 header .list-items{
     display:flex;
     max-width: 260px;
     width: 100%;
     justify-content: space-between;
+    align-items:center;
 }
 .list-items li a{
     color: white;
@@ -43,3 +53,307 @@ header .list-items{
 header .menu{
     justify-content:space-between;
 }
+.apresentacao{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    height: 50vh;
+    align-items:center;
+    justify-content:space-between;
+}
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+    width: 100%;
+    
+}
+.texto-apresentacao h1{
+    color: rgb(129, 119, 119);
+    font-size: 48px;
+    margin-bottom: 10px;
+    
+}
+.btn{
+    background-color:rgb(25, 114, 126);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: rgba(63, 82, 187, 0.671);
+}
+#quem-somos{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:space-between;
+    height: 50vh;
+    border: 1px solid black;
+}
+#quem-somos h2{
+    font-size: 32px;
+    color: rgb(129, 119, 119);
+    display: flex;
+    margin-bottom: 30px;
+    align-items:center;
+    justify-content:center;
+    
+}
+#quem-somos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 10px;
+    background-color: rgb(129, 119, 119);
+    
+    justify-content: center;
+    
+}
+#quem-somos p{
+    
+    width: 400px;
+    align-items:right;
+    justify-content:end;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}   
+#quem-somos img{
+    min-width: 420px;
+    margin-right: 5px;
+}
+.container-externo{
+    background-color: rgb(25, 114, 126);
+    width:100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}    
+.list-servicos{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.list-servicos .item-servicos{
+    text-align: center;
+}
+.item-servicos a{
+    width: 120px;
+    background-color: white;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    color: rgb(129, 119, 119);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+.item-servicos a:hover{
+    background-color:rgba(63, 82, 187, 0.671);
+    color:azure;
+}
+.item-servicos p{
+    font-weight: 700;
+    font-size: 18px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.item-servicos img{
+    width: 80%;
+    margin: auto;
+}
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+#planos h2{
+    font-size: 32px;
+    color: rgb(129, 119, 119);
+}
+.list-planos{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+.item-plano{
+    flex: 1;
+    border: 5px solid rgb(25, 114, 126);
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+.item-plano .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.item-plano h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(129, 119, 119);
+}
+.item-plano h3::after{
+    content: "";
+    background-color: rgb(25, 114, 126);
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.item-plano ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+}
+.item-plano ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(25, 114, 126);
+    margin-right: 5px;
+}
+footer{
+    background-color: rgb(25, 114, 126);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content:space-around;
+    color:aliceblue;
+}
+
+/* mobile*/
+@media screen and (max-width: 700px){
+    .flex-container{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin:auto;
+        padding: auto;
+        justify-content: center;
+        margin-top: 60px;
+        
+    }   
+    .apresentacao{
+        flex-direction: column-reverse;
+    } 
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+        margin-bottom: 50px;
+        justify-content:center;
+        text-align: center;
+    }
+    #quem-somos{
+        
+        flex-direction: column-reverse;
+        align-items: initial;
+        justify-content:center;
+        margin-bottom: 20px;
+        
+        
+    }
+    #quem-somos img{
+        min-width: 300px;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #quem-somos p{
+        margin:1em;
+        width: 350px;
+        align-content: center;
+        
+        
+       
+    }
+    .list-servicos{
+        flex-direction: column;
+    }
+    .item-servicos div img{
+        width: 20%;
+        margin: auto;
+        
+    }
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    header{
+        position:fixed;
+        top:0;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    header ul{
+        margin-top: 10px;
+        margin-left:50px;
+        text-align: center;
+        justify-content: center;
+        
+       
+    }
+       
+    .flex-container img{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .btn{
+        text-align: center;
+        justify-content: center;
+        margin-left: 80px;
+        align-items: center;
+    }
+}
+@media  screen and (max-width: 100%){
+    div img{
+        width: 600px;
+        }
+    #quem-somos{
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+        border: 10px solid black; 
+    }       
+}
+
+
